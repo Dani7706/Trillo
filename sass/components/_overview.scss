@@ -1,0 +1,76 @@
+.overview {
+  display: flex;
+  align-items: center;
+  font-size: var(--big-font-size);
+  border-bottom: var(--default-border-bottom);
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: var(--medium-font-size-2);
+  }
+  &__heading {
+    font-size: inherit;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.8rem;
+      padding: 1rem 2rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: var(--medium-font-size);
+    }
+  }
+  &__stars {
+    margin-right: auto;
+    display: flex;
+  }
+  &__star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+  &__location {
+    display: flex;
+    font-size: var(--medium-font-size-2);
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__rating {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    margin-left: 3rem;
+    align-self: stretch;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: $bp-smallest) {
+      margin-left: 1rem;
+      padding: 0 0.5rem;
+    }
+    &-average {
+      text-transform: uppercase;
+      font-size: var(--big-font-size);
+      font-weight: 300;
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 1.8rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: var(--medium-font-size);
+      }
+    }
+    &-count {
+      text-transform: uppercase;
+      font-size: var(--medium-font-size-2);
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 1rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

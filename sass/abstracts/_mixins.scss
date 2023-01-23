@@ -1,0 +1,6 @@
+@mixin abs-position($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  transform: translate(-50%, -50%);
+}
